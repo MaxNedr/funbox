@@ -4,10 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: { main: path.resolve(__dirname, 'src', 'index.js') },
+    entry: {main: path.resolve(__dirname, 'src', 'index.js')},
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: 'bundle.js'
     },
     module: {
         rules: [
@@ -24,31 +24,36 @@ module.exports = {
                     fallback: 'style-loader',
                     use: ['css-loader']
                 })
-            }
+            },
+            {
+                test: /\.(jpe?g|png|gif|ico)$/i,
+                use: ["file-loader?name=[name].[hash].[ext]"]
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file-loader',
+                options: {
+                    name: './fonts/[name].[ext]',
+                },
+            },
         ]
     },
     plugins: [
-        new ExtractTextPlugin({ filename: 'style.css' }),
+        new ExtractTextPlugin({filename: 'style.css'}),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'index.html'),
             filename: 'index.html',
         }),
-        new CopyWebpackPlugin([{
-            from: './src/fonts',
-            to: './fonts'
-        },
-            {
-                from: './src/favicon',
-                to: './favicon'
-            },
-            {
-                from: './src/img',
-                to: './img'
-            },
-            {
-                from: './src/uploads',
-                to: './uploads'
-            }
-        ]),
+        new CopyWebpackPlugin(
+            [
+                {
+                    from: './src/fonts',
+                    to: './fonts'
+                },
+                {
+                    from: './src/img',
+                    to: './img'
+                }
+            ]),
     ]
 };

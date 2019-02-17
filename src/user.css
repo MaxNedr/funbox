@@ -1,10 +1,132 @@
-.container{
-    /*background-image: url("img/Pattern.png");*/
+@font-face {
+    font-family: Exo2; /* Гарнитура шрифта */
+    src: url(fonts/Exo2.0-Thin.ttf); /* Путь к файлу со шрифтом */
+}
+.bc-p{
+    background-color:  #d91667;
+}
+.bc-b{
+    background-color:  #1698d9;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.grayscale{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(1);
+}
+.opacity{
+    filter: contrast(50%);
+
+}
+.container {
+    background-image: url("img/Pattern.png");
     width: 100%;
     min-height: 680px;
 }
 
-.item{
-    border: 4px solid #1698d9;
-    background-color:  #f2f2f2;
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.header {
+    font-family: 'Exo 2', sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 0 1px 0 #000000;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    flex-flow: nowrap column;
+    justify-content: space-between;
+    font-family: 'Exo 2', sans-serif;
+    background-image: url('img/Photo1.png');
+    margin: 40px;
+    min-width: 320px;
+    min-height: 480px;
+    border-radius: 10px;
+    -webkit-clip-path: polygon(13% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 9%);
+    clip-path: polygon(13% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 9%);
+}
+
+.wrapper_text {
+    width: max-content;
+}
+
+.text {
+    display: block;
+    font-family: 'Trebuchet MS', serif;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.main_text {
+    display: block;
+    font-family: 'Trebuchet MS', serif;
+    color: #000000;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.submain_text {
+    display: block;
+    font-family: 'Trebuchet MS', serif;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+}
+.wrapper_weight{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.weight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    border-radius: 50%;
+    min-width: 90px;
+    min-height: 90px;
+    margin: 15px;
+}
+
+.weight_digit {
+    display: block;
+    font-family: 'Trebuchet MS', serif;
+    color: #ffffff;
+    padding-top: 17px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+}
+
+.weight_desc {
+    margin-top: 14px;
+    display: block;
+    font-family: 'Trebuchet MS', serif;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
 }
