@@ -2,22 +2,28 @@
     font-family: Exo2; /* Гарнитура шрифта */
     src: url(fonts/Exo2.0-Thin.ttf); /* Путь к файлу со шрифтом */
 }
-.bc-p{
-    background-color:  #d91667;
+
+.bc-p {
+    background-color: #d91667;
 }
-.bc-b{
-    background-color:  #1698d9;
+
+.bc-b {
+    background-color: #1698d9;
 }
-.bc-p_hover{
-    background-color:  #e62e7a;
+
+.bc-p_hover {
+    background-color: #e62e7a;
 }
-.bc-b_hover{
-    background-color:  #2ea8e6;
+
+.bc-b_hover {
+    background-color: #2ea8e6;
 }
-.color_pink{
+
+.color_pink {
     color: #d91667;
 }
-.color_666{
+
+.color_666 {
     color: #666;
 }
 
@@ -29,14 +35,15 @@
     margin-top: 16px;
 }
 
-.grayscale{
+.grayscale {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-filter: grayscale(1);
 }
-.opacity{
+
+.opacity {
     filter: contrast(50%);
 
 }
@@ -47,10 +54,9 @@
     min-height: 680px;
 }
 
-.shadow{
+.shadow {
     background-image: url("img/Shadow.png");
 }
-
 
 .products {
     display: flex;
@@ -83,10 +89,10 @@
     -webkit-clip-path: polygon(13% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 9%);
     clip-path: polygon(13% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 9%);
 }
-.item:hover{
+
+.item:hover {
     cursor: pointer;
 }
-
 
 .wrapper_text {
     width: max-content;
@@ -115,11 +121,13 @@
     font-size: 24px;
     font-weight: 700;
 }
-.wrapper_weight{
+
+.wrapper_weight {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
+
 .weight {
     display: flex;
     justify-content: center;
@@ -152,7 +160,8 @@
     line-height: 22px;
     text-align: center;
 }
-.under_item{
+
+.under_item {
     margin-top: -26px;
     display: block;
     text-align: center;
@@ -164,6 +173,14 @@
     line-height: 16px;
 }
 
-.disable{
+.disable {
     color: #ffff66;
+}
+
+@media (max-width: 375px) {
+    .item {
+        margin-left: 85px;
+        margin-right: 85px;
+    }
+
 }
