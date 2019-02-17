@@ -14,6 +14,12 @@
 .bc-b_hover{
     background-color:  #2ea8e6;
 }
+.color_pink{
+    color: #d91667;
+}
+.color_666{
+    color: #666;
+}
 
 .mt24 {
     margin-top: 24px;
@@ -34,11 +40,17 @@
     filter: contrast(50%);
 
 }
+
 .container {
     background-image: url("img/Pattern.png");
     width: 100%;
     min-height: 680px;
 }
+
+.shadow{
+    background-image: url("img/Shadow.png");
+}
+
 
 .products {
     display: flex;
@@ -54,6 +66,7 @@
     font-weight: 100;
     text-align: center;
     text-shadow: 0 1px 0 #000000;
+    padding-top: 47px;
 }
 
 .item {
@@ -82,7 +95,6 @@
 .text {
     display: block;
     font-family: 'Trebuchet MS', serif;
-    color: #666666;
     font-size: 16px;
     font-weight: 400;
     text-align: left;
@@ -139,4 +151,19 @@
     font-weight: 400;
     line-height: 22px;
     text-align: center;
+}
+.under_item{
+    margin-top: -26px;
+    display: block;
+    text-align: center;
+    text-shadow: 0 1px 0 #000000;
+    color: #ffffff;
+    font-family: "Trebuchet MS", serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.disable{
+    color: #ffff66;
 }
