@@ -8,6 +8,12 @@
 .bc-b{
     background-color:  #1698d9;
 }
+.bc-p_hover{
+    background-color:  #e62e7a;
+}
+.bc-b_hover{
+    background-color:  #2ea8e6;
+}
 
 .mt24 {
     margin-top: 24px;
@@ -64,6 +70,10 @@
     -webkit-clip-path: polygon(13% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 9%);
     clip-path: polygon(13% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 9%);
 }
+.item:hover{
+    cursor: pointer;
+}
+
 
 .wrapper_text {
     width: max-content;
